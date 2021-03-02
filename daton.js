@@ -11,7 +11,7 @@ rp(url)
       });
       console.log(arr);
       try {
-        fs.writeFileSync("post.json", JSON.stringify(arr))
+        fs.writeFileSync("post.json", JSON.stringify(arr, undefined, 2));
       } catch (err) {
         console.error(err)
       }
